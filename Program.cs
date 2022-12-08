@@ -66,6 +66,35 @@ namespace exe4_066
         static void Main(string[] args)
         {
             Stack s = new Stack();
+            while(true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("\n ------STACK MENU------\n");
+                Console.WriteLine("1. Pop");
+                Console.WriteLine("2. Push");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("\nEnter your choice : ");
+                string Sinput = Console.ReadLine();
+                char ch = Convert.ToChar(Sinput == "" ? "0" : Sinput);
+                switch (ch)
+                {
+                    case '1':
+                        s.pop();
+                        break;
+                    case '2':
+                        s.push();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice");
+                        break;
+                }
+            }
         }
     }
 }
