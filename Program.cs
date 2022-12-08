@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace exe4_066
         {
             if(top == -1)
             {
-                Console.WriteLine("Stack Under");
+                Console.WriteLine("Stack Underflow");
                 return -1;
             }
             else
@@ -30,7 +31,20 @@ namespace exe4_066
                 return top;
             }
         }
-
+        public void push()
+        {
+            if(top == max -1)
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+            else
+            {
+                top++;
+                Console.WriteLine("Masukkan Element : ");
+                okta[top] = Console.ReadLine();
+            }
+        }
     }
     internal class Program
     {
