@@ -45,6 +45,10 @@ namespace exe4_066
                 okta[top] = Console.ReadLine();
             }
         }
+        public void display()
+        {
+
+        }
     }
     internal class Program
     {
