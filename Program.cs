@@ -16,6 +16,10 @@ namespace exe4_066
             top = -1;
             max = okta.Length;
         }
+        public void pop()
+        {
+
+        }
     }
     internal class Program
     {
