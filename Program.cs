@@ -11,7 +11,11 @@ namespace exe4_066
         private string[] okta = new string[85];
         private int top;
         private int max;
-        
+        public Stack()
+        {
+            top = -1;
+            max = okta.Length;
+        }
     }
     internal class Program
     {
