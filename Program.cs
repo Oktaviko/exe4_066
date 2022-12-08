@@ -65,6 +65,7 @@ namespace exe4_066
     {
         static void Main(string[] args)
         {
+            Stack s = new Stack();
         }
     }
 }
