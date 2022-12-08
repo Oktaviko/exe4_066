@@ -21,7 +21,7 @@ namespace exe4_066
         {
             if(top == -1)
             {
-                Console.WriteLine("Stack Underflow");
+                Console.WriteLine("Stack kosong");
                 return -1;
             }
             else
@@ -35,7 +35,7 @@ namespace exe4_066
         {
             if(top == max -1)
             {
-                Console.WriteLine("Stack Overflow");
+                Console.WriteLine("Stack melebihi batas element");
                 return;
             }
             else
@@ -49,14 +49,14 @@ namespace exe4_066
         {
             if (top == -1)
             {
-                Console.WriteLine("Stack is empty");
+                Console.WriteLine("Stack kosong");
                 return ;
             }
             else
             {
                 for (int i = 0;i <= top;i++)
                 {
-                    Console.WriteLine("Item[" + (i + 1) + "]: " + okta[i]);
+                    Console.WriteLine("Element[" + (i + 1) + "]: " + okta[i]);
                 }
             }
         }
@@ -74,7 +74,7 @@ namespace exe4_066
                 Console.WriteLine("2. Push");
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit");
-                Console.WriteLine("\nEnter your choice : ");
+                Console.WriteLine("\nMasukkkan pilihan anda : ");
                 string Sinput = Console.ReadLine();
                 char ch = Convert.ToChar(Sinput == "" ? "0" : Sinput);
                 switch (ch)
@@ -91,7 +91,7 @@ namespace exe4_066
                     case '4':
                         return;
                     default:
-                        Console.WriteLine("\nInvalid choice");
+                        Console.WriteLine("\nPilihan Salah !!!");
                         break;
                 }
             }
