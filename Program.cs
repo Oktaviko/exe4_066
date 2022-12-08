@@ -16,10 +16,21 @@ namespace exe4_066
             top = -1;
             max = okta.Length;
         }
-        public void pop()
+        public int pop()
         {
-
+            if(top == -1)
+            {
+                Console.WriteLine("Stack Under");
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("Element yang terhapus adalah :" + okta[top]);
+                top--;
+                return top;
+            }
         }
+
     }
     internal class Program
     {
