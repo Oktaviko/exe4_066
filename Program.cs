@@ -47,7 +47,18 @@ namespace exe4_066
         }
         public void display()
         {
-
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is empty");
+                return ;
+            }
+            else
+            {
+                for (int i = 0;i <= top;i++)
+                {
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + okta[i]);
+                }
+            }
         }
     }
     internal class Program
